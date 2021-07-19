@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ABstudios | Written Work</title>
+
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="../shared/head-style.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <script type="text/javascript" src="../shared/w3include.js"></script>
+        <script type="text/javascript" src="../shared/header-btns.js"></script>
+        <script type="text/javascript" src="../written-work/main.js"></script>
+    </head>
+
+    <body onload="pageLoaded('writtenbtn')">
+        <div w3-include-html="../shared/head.html"></div>
+
+        <div id="main-container">
+            <div class="holder-ver" id="script-ver">
+                <div class="holder-hor">
+                    <div class="preview">
+                        <a onclick="previewToggle('script-ver', '0')">
+                        <img class="preview-image" src="https://wallpaperaccess.com/full/387424.jpg" alt="Script 1">
+                        <div class="preview-title">TITLE HERE</div>
+                        </a>
+                    </div>
+                    <div class="preview">
+                        <a onclick="previewToggle('script-ver', '1')">
+                            <img class="preview-image" src="" alt="Script 1">
+                            <div class="preview-title">TITLE HERE</div>
+                        </a>
+                    </div>
+                    <div class="preview">
+                        <img class="preview-image" src="" alt="Script 1">
+                        <div class="preview-title">TITLE HERE</div>
+                    </div>
+                    <div class="preview">
+                        <img class="preview-image" src="" alt="Script 1">
+                        <div class="preview-title">TITLE HERE</div>
+                    </div>
+                    <div class="preview">
+                        <img class="preview-image" src="" alt="Script 1">
+                        <div class="preview-title">TITLE HERE</div>
+                    </div>
+                    
+                </div>
+                    <div class="synopsis" id="scriptSynopsis" hidden=true>SYNOPSIS</div>
+            </div>
+
+            <div class="holder-ver" id="stories">
+                <div class="holder-hor">
+                    <div class="preview">
+                        <img class="preview-image" src="" alt="Story 1">
+                        <div class="preview-title">TITLE HERE</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="holder-ver" id="books">
+                <div class="holder-hor">
+                    <div class="preview">
+                        <img class="preview-image" src="" alt="Book 1">
+                        <div class="preview-title">TITLE HERE</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            includeHTML();
+            buttonClicked("writtenbtn");
+        </script>
+    </body>
+</html>

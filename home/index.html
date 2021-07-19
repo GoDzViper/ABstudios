@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>ABstudios | Home</title>
+
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="../shared/head-style.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <script type="text/javascript" src="../shared/w3include.js"></script>
+        <script type="text/javascript" src="../shared/header-btns.js"></script>
+
+    </head>
+
+    <body onload="pageLoaded('homebtn');">
+        <div w3-include-html="../shared/head.html"></div>
+
+        <a href="https://en.wikipedia.org/wiki/Main_Page" target="_blank"> 
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Wikipedia-logo-v2-en.svg/1200px-Wikipedia-logo-v2-en.svg.png" alt="Wikipedia Logo" width="200">
+        </a>
+        <p id="wiki-text">Wikipedia is the best site ever!</p>
+
+        <h2 class="header bold-text">Un-Ordered List</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <h2 class="header bold-text">Ordered List</h2>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+        <h2 class="header bold-text">Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                    <th>Column 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1-1</td>
+                    <td>1-2</td>
+                    <td>1-3</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <script>
+            includeHTML();
+        </script>
+    </body>
+</html>

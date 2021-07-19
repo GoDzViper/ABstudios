@@ -1,0 +1,19 @@
+/* Blank CSS File */
+
+html {
+    font-family: LiberationSans, sans-serif;
+    font-size: 100%; /* 16px */
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.header {
+    font-size: 2rem;
+    margin-left: 20rem;
+}
+
+#wiki-text {
+    float:right;
+}

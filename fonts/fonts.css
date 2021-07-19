@@ -1,0 +1,25 @@
+/* Blank CSS File */
+
+@font-face {
+    font-family: 'LiberationSans';
+    src: url('LiberationSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'LiberationSans';
+    font-style: italic;
+    src: url('LiberationSans-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'LiberationSans';
+    font-weight: bold;
+    src: url('LiberationSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'LiberationSans';
+    font-weight: bold;
+    font-style: italic;
+    src: url('LiberationSans-BoldItalic.ttf');
+}
