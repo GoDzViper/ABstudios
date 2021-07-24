@@ -1,0 +1,21 @@
+[
+    {
+        "script": [
+            "Script 1 synopsis",
+            "Script 2 synopsis",
+            "Script 3 synopsis",
+            "Script 4 synopsis",
+            "Script 5 synopsis"
+        ],
+
+        "story": [
+            "Story 1 Synopsis",
+            "Story 2 Synopsis",
+            "Story 3 Synopsis"
+        ],
+
+        "book": [
+            "Book 1 Synopsis"
+        ]
+    }
+]
