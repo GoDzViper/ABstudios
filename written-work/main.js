@@ -5,6 +5,7 @@ var synopsisBool = false;
 var synopsis = null;
 var prevSynIndex = 0;
 var prevSynType = "none";
+var moreBtn = null;
 
 var synJSON = null;
 
@@ -17,6 +18,7 @@ window.addEventListener("load", init, true); function init() {
     synopsis = document.getElementsByClassName("synopsis");
     synJSON = "synopses.json";
 
+    moreBtn = document.getElementsByClassName("moreBtn");
 
     holders = document.getElementsByClassName("holder-ver");
 
@@ -43,6 +45,7 @@ function showSynopsis(type, index) {
 
     if(synopsis != null) {
 
+        //get correct synopsis
         for (let i = 0; i < synopsis.length; i++) {
             if(synopsis[i].id == type + "Syn") {
                 synopsis[i].hidden = false
@@ -55,6 +58,7 @@ function showSynopsis(type, index) {
             }
         }
 
+        //change height of bounding box
         for (let i = 0; i < holders.length; i++) {
             if(type == holders[i].id) {
                 mainContainer.style.height = "1100px";
@@ -64,6 +68,11 @@ function showSynopsis(type, index) {
                 holderEl.style.maxHeight = "500px";
             }
         }
+
+        //hide more buttons
+        for (let i = 0; i < moreBtn.length; i++) {
+            moreBtn[i].hidden = true;
+        }
     }
     
 }
@@ -72,12 +81,14 @@ function hideSynopsis(type, index) {
     synopsisBool = false;
 
     if (synopsis != null) {
+        //hide synopsis
         for (let i = 0; i < synopsis.length; i++) {
             if(synopsis[i].id == type + "Syn") {
                 synopsis[i].hidden = true
             }
         }
 
+        //change height of bounding box
         for (let i = 0; i < holders.length; i++) {
             if(type == holders[i].id) {
                 mainContainer.style.height = "800px";
@@ -86,6 +97,11 @@ function hideSynopsis(type, index) {
                 holderEl.style.height = "230px";
                 holderEl.style.maxHeight = "230px";
             }
+        }
+
+        //show more buttons
+        for (let i = 0; i < moreBtn.length; i++) {
+            moreBtn[i].hidden = false;
         }
     }
 }
